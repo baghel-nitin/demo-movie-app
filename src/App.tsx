@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path='/movies' element={<MovieList />} />
-            <Route path='/' element={<Navigate to='/movies' replace />} />
+            <Route path='/' element={<MovieList />} />
+            {/* <Route path='/' element={<Navigate to='/movies' replace />} /> */}
           </Routes>
         </Suspense>
       </BrowserRouter>
