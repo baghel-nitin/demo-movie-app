@@ -1,4 +1,4 @@
-import { FC, memo} from 'react'
+import { FC, memo } from 'react'
 
 export interface Props {
   item: MovieProps
@@ -14,7 +14,7 @@ const MovieCard: FC<Props> = ({ item }) => {
   let { name, 'poster-image': posterImage } = item
 
   return (
-    <div className='mb-8 flex w-[140px] flex-col y9:w-[182px]'>
+    <div className='mb-8 '>
       <div className='group relative text-textDark'>
         <img
           src={
@@ -23,7 +23,7 @@ const MovieCard: FC<Props> = ({ item }) => {
               : `https://test.create.diagnal.com/images/${posterImage}`
           }
           alt='noImage'
-          className={`h-[210px] w-[140px] y9:h-[273px] y9:w-[182px] mr-0`}
+          className={`w-[100%]`}
         />
       </div>
       <div className='flex w-[140px] justify-start text-left text-[17px] y9:w-[180px] '>

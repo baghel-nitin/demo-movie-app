@@ -1,8 +1,11 @@
 body {
   background-color: #171717;
-  padding-top: 90px;
 }
-
+#root {
+  padding-top: 110px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .fixed-header {
   position: fixed;
   top: 0;
@@ -15,4 +18,5 @@ body {
   box-shadow: 0px 41px 36px #181818;
   padding-left: 0;
   padding-right: 0;
+  height: 90px;
 }
