@@ -56,9 +56,9 @@ const MovieList: FC<{}> = () => {
       }
     }
 
-    window.addEventListener('touchstart', handleScroll)
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('touchstart', handleScroll)
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [data.length, fetchData, totalRecords])
 
